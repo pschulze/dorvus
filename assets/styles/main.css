@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  height: 100vh;
+
+  background-color: black;
+  color: white;
+  font-family: cursive;
+  font-size: 20px;
+
+  cursor: url("/static/images/cursor.png"), auto;
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+  }
+
+  .column.left {
+    width: 25%;
+
+    img {
+      margin-left: 0;
+    }
+  }
+
+  .column.center {
+    width: 50%;
+  }
+
+  .column.right {
+    width: 25%;
+
+    img {
+      margin-right: 0;
+    }
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .pico8-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pico8-widget {
+    border: black;
+    width: 500px;
+    height: 500px;
+  }
+}
